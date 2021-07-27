@@ -3,25 +3,25 @@
 <p align="center"> Dingtalk SDK for Laravel/Lumen </p>
 
 <p align="center">
-    <a href="https://packagist.org/packages/calchen/laravel-dingtalk">
-        <img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/calchen/laravel-dingtalk.svg">
+    <a href="https://packagist.org/packages/branchzero/laravel-dingtalk">
+        <img alt="Latest Stable Version" src="https://img.shields.io/packagist/v/branchzero/laravel-dingtalk.svg">
     </a>
-    <a href="https://packagist.org/packages/calchen/laravel-dingtalk">
-        <img alt="Total Downloads" src="https://img.shields.io/packagist/dt/calchen/laravel-dingtalk.svg">
+    <a href="https://packagist.org/packages/branchzero/laravel-dingtalk">
+        <img alt="Total Downloads" src="https://img.shields.io/packagist/dt/branchzero/laravel-dingtalk.svg">
     </a>
-    <a href="https://github.com/calchen/laravel-dingtalk/blob/master/LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/calchen/laravel-dingtalk.svg">
+    <a href="https://github.com/branchzero/laravel-dingtalk/blob/master/LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/branchzero/laravel-dingtalk.svg">
     </a>
 </p>
 
-> [中文](https://github.com/calchen/laravel-dingtalk/blob/master/README.md)
+> [中文](https://github.com/branchzero/laravel-dingtalk/blob/master/README.md)
 
 Depend on [mingyoung/dingtalk](https://github.com/mingyoung/dingtalk)
 
 ## Installing
 
 ```shell
-$ composer require calchen/laravel-dingtalk
+$ composer require branchzero/laravel-dingtalk
 ```
 
 ### Laravel
@@ -30,26 +30,26 @@ For Laravel >=5.5, no need to manually add `DingtalkServiceProvider` into config
 
 Open your `AppServiceProvider` (located in `app/Providers`) and add this line in `register` function
 ```php
-$this->app->register(\Calchen\LaravelDingtalk\DingtalkServiceProvider::class);
+$this->app->register(\Branchzero\LaravelDingtalk\DingtalkServiceProvider::class);
 ```
 or open your `config/app.php` and add this line in `providers` section
 ```php
-Calchen\LaravelDingtalk\DingtalkServiceProvider::class,
+Branchzero\LaravelDingtalk\DingtalkServiceProvider::class,
 ```
 
-Publish configuration file from `vendor/calchen/laravel-dingtalk/config/dingtalk.php` to `config/dingtalk.php`
+Publish configuration file from `vendor/branchzero/laravel-dingtalk/config/dingtalk.php` to `config/dingtalk.php`
 ```shell
-php artisan vendor:publish --provider="Calchen\LaravelDingtalk\DingtalkServiceProvider"
+php artisan vendor:publish --provider="Branchzero\LaravelDingtalk\DingtalkServiceProvider"
 ```
 
 ### Lumen
 
 Open your `bootstrap/app.php` and add this line
 ```php
-$app->register(Calchen\LaravelDingtalk\DingtalkServiceProvider::class);
+$app->register(Branchzero\LaravelDingtalk\DingtalkServiceProvider::class);
 ```
 
-Copy configuration file from `vendor/calchen/laravel-dingtalk/config/dingtalk.php` to `config/dingtalk.php`
+Copy configuration file from `vendor/branchzero/laravel-dingtalk/config/dingtalk.php` to `config/dingtalk.php`
 
 ## Configuration
 

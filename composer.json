@@ -1,5 +1,5 @@
 {
-    "name": "calchen/laravel-dingtalk",
+    "name": "branchzero/laravel-dingtalk",
     "description": "钉钉 SDK Laravel/Lumen 扩展包（Dingtalk SDK for Laravel/Lumen）",
     "keywords": [
         "laravel",
@@ -15,10 +15,14 @@
         {
             "name": "陈恺垣",
             "email": "contact@chenky.com"
+        },
+        {
+            "name": "branchzero",
+            "email": "branchzero@gmail.com"
         }
     ],
     "require": {
-        "mingyoung/dingtalk": "^2.0",
+        "branchzero/dingtalk": "^1.0",
         "illuminate/container": "^5.1|^6.0|^7.0|^8.0"
     },
     "require-dev": {
@@ -27,16 +31,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Calchen\\LaravelDingtalk\\": "src"
+            "Branchzero\\LaravelDingtalk\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Calchen\\LaravelDingtalk\\DingtalkServiceProvider"
+                "Branchzero\\LaravelDingtalk\\DingtalkServiceProvider"
             ],
             "aliases": {
-                "EasyDingtalk": "Calchen\\LaravelDingtalk\\Facade"
+                "EasyDingtalk": "Branchzero\\LaravelDingtalk\\Facade"
             }
         }
     }
